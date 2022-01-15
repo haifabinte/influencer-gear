@@ -62,7 +62,7 @@ transform-origin:left right;
     grid-template-columns: repeat(3,1fr);
   grid-row-gap:24px ;
   grid-column-gap: 24px;
-}
+ }
 
 .collection{ 
     width: 270px;
@@ -120,7 +120,8 @@ footer div{
     padding-bottom: 4%;
 }
 /* Media Queries */
-@media only screen and (max-widtg:100px){
+/* mobile */
+@media only screen and (max-width:688px){
     .containner{
        width: 100%; 
     }
@@ -132,4 +133,14 @@ footer div{
          flex-direction: column;
      }
  }
+ /* tablet devices */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .containner{
+        width:100%;
+    }
+    .products-item, .containner, .blogs{
+        grid-template-columns:repeat(2,1fr); 
+       
+    }
+}
  
