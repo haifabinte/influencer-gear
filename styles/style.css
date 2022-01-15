@@ -24,7 +24,7 @@ main{
 #start{
     font-size: 30px;
 }
-#book{ 
+.book{ 
     padding: 10px 18px;
     border: 1px solid;
     text-decoration: none;
@@ -60,7 +60,8 @@ transform-origin:left right;
  .popular-collection{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-   grid-column-gap: 24px;
+  grid-row-gap:24px ;
+  grid-column-gap: 24px;
 }
 
 .collection{ 
@@ -88,9 +89,47 @@ color:
 color: 
 #AEAEAE
 }
-#see-more{
+.see-more{
 
     text-decoration: none;
     color: #E02C6D;
-align-items: var(#3A3A3A);
+margin-left: 88%;
+margin-top: 10px;
 }
+/* extrapart */
+
+.blog{
+    display: flex;
+    
+}
+.blog .thumbnail img{
+    width: 177px;
+    height: 117px;
+ }
+ .blog-info{
+    margin-left:16px ;
+}
+.blog-title{
+    font-size: 20px;
+}
+footer div{
+    color: white;
+    background-color: rgb(22, 14, 44);
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 4%;
+}
+/* Media Queries */
+@media only screen and (max-widtg:100px){
+    .containner{
+       width: 100%; 
+    }
+     .products-item, .blog, .collection{
+        
+         grid-template-columns:repeat(1,1fr); 
+     }
+     .camera-place, .start-journey, .blog, .course{ 
+         flex-direction: column;
+     }
+ }
+ 
