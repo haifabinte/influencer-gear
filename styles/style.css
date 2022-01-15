@@ -1,0 +1,48 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500display=swap');
+/* common styles */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:     #FFFFFF;
+}
+main{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containner{
+    width: 870px;
+    padding: 30px;
+    border-radius: 5x;
+    margin-top: 21px ;
+}
+#start{
+    font-size: 30px;
+}
+#book{ 
+    padding: 10px 18px;
+    border: 1px solid;
+    text-decoration: none;
+    background-color:rgb(207, 50, 76);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+
+}
+/* Influencer products styles */
+.products-item{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 40px;
+}
+/*-------------------- transfrom+transition --------------------- */
+.camera-place{
+    border:1px solid white;
+}
+.camera{
+    transition:transform 5s ;
+}
+.camera-place:hover .camera {
+transform:rotate(360deg);
+transform-origin:left right;
+}
+               /* ------------------ */
